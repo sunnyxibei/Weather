@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">WeChatCleaner</string>
+    <string name="desc_template">forecastList.city:%s  \nforecastList.country:%s   \ndailyForecast.date:%s   \ndailyForecast.description:%s</string>
+</resources>
