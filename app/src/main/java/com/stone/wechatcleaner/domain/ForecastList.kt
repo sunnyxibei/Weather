@@ -5,7 +5,7 @@ package com.stone.wechatcleaner.domain
  */
 
 data class ForecastList(val city: String, val country: String,
-                        val dailyForecast: List<Forecast>) {
+                        private val dailyForecast: List<Forecast>) {
     //do sth cute 重载操作符
     operator fun get(position: Int): Forecast = dailyForecast[position]
 

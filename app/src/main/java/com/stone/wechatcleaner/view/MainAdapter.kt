@@ -1,4 +1,4 @@
-package com.stone.wechatcleaner
+package com.stone.wechatcleaner.view
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
@@ -8,6 +8,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import com.squareup.picasso.Picasso
+import com.stone.wechatcleaner.R
 import com.stone.wechatcleaner.domain.Forecast
 import com.stone.wechatcleaner.domain.ForecastList
 
@@ -31,7 +32,7 @@ class MainAdapter(private var mContext: Context, private val forecastList: Forec
         return forecastList.size()
     }
 
-    class ViewHolder(itemView: View?, val itemClick: OnItemClickListener) : RecyclerView.ViewHolder(itemView) {
+    class ViewHolder(itemView: View?, private val itemClick: OnItemClickListener) : RecyclerView.ViewHolder(itemView) {
         var imageViewIcon: ImageView? = itemView?.findViewById(R.id.icon)
         var textViewDate: TextView? = itemView?.findViewById(R.id.date)
         var textViewDesc: TextView? = itemView?.findViewById(R.id.description)
@@ -39,7 +40,10 @@ class MainAdapter(private var mContext: Context, private val forecastList: Forec
         var textViewMin: TextView? = itemView?.findViewById(R.id.minTemperature)
 
         fun bindForecast(forecast: Forecast) {
-            Picasso.with(itemView.context).load(forecast.iconUrl).into(imageViewIcon)
+            Picasso
+                    .with(itemView.context)
+                    .load(forecast.iconUrl)
+                    .into(imageViewIcon)
             textViewDate?.text = forecast.date
             textViewDesc?.text = forecast.description
             textViewMax?.text = forecast.high.toString()
@@ -48,7 +52,7 @@ class MainAdapter(private var mContext: Context, private val forecastList: Forec
         }
     }
 
-    public interface OnItemClickListener {
+    interface OnItemClickListener {
         operator fun invoke(forecast: Forecast)
     }
 

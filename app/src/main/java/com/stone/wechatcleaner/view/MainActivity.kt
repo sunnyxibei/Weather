@@ -1,9 +1,10 @@
-package com.stone.wechatcleaner
+package com.stone.wechatcleaner.view
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import com.stone.wechatcleaner.R
 import com.stone.wechatcleaner.domain.Forecast
 import com.stone.wechatcleaner.domain.RequestCommand
 import org.jetbrains.anko.doAsync
@@ -22,7 +23,7 @@ class MainActivity : AppCompatActivity() {
         recyclerView.layoutManager = LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         //测试使用命令模式改造过后的请求
         doAsync {
-            val forecastList = RequestCommand("Aletai, XJ 906 ").execute()
+            val forecastList = RequestCommand("100000").execute()
             uiThread {
                 supportActionBar?.title = forecastList.country + "   " + forecastList.city
                 val itemClick: MainAdapter.OnItemClickListener = object : MainAdapter.OnItemClickListener {
