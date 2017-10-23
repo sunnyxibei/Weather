@@ -1,4 +1,4 @@
-package com.stone.wechatcleaner.bean
+package com.stone.weather.bean
 
 /**
  * Created by jiayuanbin on 2017/9/4.

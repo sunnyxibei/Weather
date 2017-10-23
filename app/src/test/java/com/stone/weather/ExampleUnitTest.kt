@@ -1,4 +1,4 @@
-package com.stone.wechatcleaner
+package com.stone.weather
 
 import org.junit.Test
 

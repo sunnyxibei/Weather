@@ -1,6 +1,6 @@
-package com.stone.wechatcleaner.domain
+package com.stone.weather.domain
 
-import com.stone.wechatcleaner.bean.ForecastRequest
+import com.stone.weather.bean.ForecastRequest
 
 /**
  * Created by jiayuanbin on 2017/9/4.

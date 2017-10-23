@@ -1,12 +1,12 @@
-package com.stone.wechatcleaner.view
+package com.stone.weather.view
 
 import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
-import com.stone.wechatcleaner.R
-import com.stone.wechatcleaner.domain.Forecast
-import com.stone.wechatcleaner.domain.RequestCommand
+import com.stone.weather.R
+import com.stone.weather.domain.Forecast
+import com.stone.weather.domain.RequestCommand
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.find
 import org.jetbrains.anko.toast

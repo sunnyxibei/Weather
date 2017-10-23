@@ -1,10 +1,10 @@
-package com.stone.wechatcleaner.domain
+package com.stone.weather.domain
 
-import com.stone.wechatcleaner.bean.Forecast
-import com.stone.wechatcleaner.bean.ForecastResult
+import com.stone.weather.bean.Forecast
+import com.stone.weather.bean.ForecastResult
 import java.text.DateFormat
 import java.util.*
-import com.stone.wechatcleaner.domain.Forecast as ModelForecast
+import com.stone.weather.domain.Forecast as ModelForecast
 
 /**
  * Created by jiayuanbin on 2017/9/4.

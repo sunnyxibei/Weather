@@ -1,4 +1,4 @@
-package com.stone.wechatcleaner.view
+package com.stone.weather.view
 
 import android.content.Context
 import android.support.v7.widget.RecyclerView
@@ -8,9 +8,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import com.squareup.picasso.Picasso
-import com.stone.wechatcleaner.R
-import com.stone.wechatcleaner.domain.Forecast
-import com.stone.wechatcleaner.domain.ForecastList
+import com.stone.weather.R
+import com.stone.weather.domain.Forecast
+import com.stone.weather.domain.ForecastList
 
 /**
  * 适配器

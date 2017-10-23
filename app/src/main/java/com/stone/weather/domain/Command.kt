@@ -1,4 +1,4 @@
-package com.stone.wechatcleaner.domain
+package com.stone.weather.domain
 
 /**
  * Created by jiayuanbin on 2017/9/4.

@@ -1,4 +1,4 @@
-package com.stone.wechatcleaner.bean
+package com.stone.weather.bean
 
 import com.google.gson.Gson
 import java.net.URL
