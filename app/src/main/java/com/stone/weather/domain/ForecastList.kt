@@ -5,12 +5,12 @@ package com.stone.weather.domain
  */
 
 data class ForecastList(val city: String, val country: String,
-                        private val dailyForecast: List<Forecast>) {
+                        private val dailyForecastModel: List<ForecastModel>) {
     //do sth cute 重载操作符
-    operator fun get(position: Int): Forecast = dailyForecast[position]
+    operator fun get(position: Int): ForecastModel = dailyForecastModel[position]
 
-    fun size(): Int = dailyForecast.size
+    fun size(): Int = dailyForecastModel.size
 }
 
-data class Forecast(val date: String, val description: String,
-                    val high: Int, val low: Int, val iconUrl: String)
+data class ForecastModel(val date: String, val description: String,
+                         val high: Int, val low: Int, val iconUrl: String)

@@ -4,7 +4,7 @@ import com.stone.weather.bean.Forecast
 import com.stone.weather.bean.ForecastResult
 import java.text.DateFormat
 import java.util.*
-import com.stone.weather.domain.Forecast as ModelForecast
+import com.stone.weather.domain.ForecastModel as ModelForecast
 
 /**
  * Created by jiayuanbin on 2017/9/4.
