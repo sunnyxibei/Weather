@@ -4,11 +4,12 @@ import android.os.Bundle
 import android.support.v7.app.AppCompatActivity
 import android.support.v7.widget.LinearLayoutManager
 import android.support.v7.widget.RecyclerView
+import android.widget.Toast
 import com.stone.weather.R
+import com.stone.weather.base.App
 import com.stone.weather.domain.RequestCommand
 import org.jetbrains.anko.doAsync
 import org.jetbrains.anko.find
-import org.jetbrains.anko.toast
 import org.jetbrains.anko.uiThread
 
 class MainActivity : AppCompatActivity() {
@@ -28,6 +29,10 @@ class MainActivity : AppCompatActivity() {
                         forecastList, { toast(it.date + it.description) })
             }
         }
+    }
+
+    private fun toast(message: String, duration: Int = Toast.LENGTH_SHORT) {
+        Toast.makeText(App.instance(), "${javaClass.simpleName}$message", duration).show()
     }
 
     /**
