@@ -11,11 +11,7 @@ class App : Application() {
 
     // define application instance
     companion object {
-<<<<<<< HEAD
         var instance: App by Delegates.notNull()
-=======
-        private var instance: App by Delegates.notNull()
->>>>>>> 06bf20e0537fc3d5c86b1f07695411059949210d
     }
 
     override fun onCreate() {
