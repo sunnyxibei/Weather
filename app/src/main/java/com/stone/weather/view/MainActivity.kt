@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
                 LinearLayoutManager(this, LinearLayoutManager.VERTICAL, false)
         //测试使用命令模式改造过后的请求
         doAsync {
-            val forecastList = RequestCommand("100000").execute()
+            val forecastList = RequestCommand("10000").execute()
             uiThread {
                 supportActionBar?.title = forecastList.country + "   " + forecastList.city
                 recyclerView.adapter = MainAdapter(this@MainActivity,
